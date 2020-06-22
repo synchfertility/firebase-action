@@ -85,3 +85,9 @@ The Dockerfile and associated scripts and documentation in this project are rele
 ### Recommendation
 
 If you decide to do seperate jobs for build and deployment (which is probably advisable), then make sure to clone your repo as the Firebase-cli requires the firebase repo to deploy (specifically the `firebase.json`)
+
+## Authors
+
+Originally created by Jeremy Shore.
+
+Extended by Zeeshan Sarwar of Synch Fertility to support specific firebase project requirements.
