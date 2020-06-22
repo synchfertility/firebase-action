@@ -23,9 +23,4 @@ if [ -n "$PROJECT_ID" ]; then
   firebase use --add "$PROJECT_ID"
 fi
 
-if [ -n "$FIREBASE_SERVICE_ACCOUNT_KEY_JSON" ]; then
-  echo "setting service account details for functions in functions/serviceAccountKey.json"
-  echo $FIREBASE_SERVICE_ACCOUNT_KEY_JSON > functions/serviceAccountKey.json
-fi
-
 sh -c "firebase $*"
