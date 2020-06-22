@@ -1,6 +1,6 @@
-FROM node:10-slim
+FROM node:10-alpine
 
-LABEL version="1.1.0"
+LABEL version="1.2.0"
 LABEL repository="https://github.com/synchfertility/firebase-action"
 LABEL homepage="https://github.com/synchfertility/firebase-action"
 LABEL maintainer="Zeeshan Sarwar <synchfertility@github.com>"
@@ -10,7 +10,7 @@ LABEL com.github.actions.description="Wraps the firebase-tools CLI to enable com
 LABEL com.github.actions.icon="package"
 LABEL com.github.actions.color="gray-dark"
 
-RUN npm install -g firebase-tools
+RUN yarn global add firebase-tools
 
 COPY LICENSE README.md /
 COPY "entrypoint.sh" "/entrypoint.sh"
